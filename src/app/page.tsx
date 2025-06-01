@@ -2,7 +2,7 @@
 import Header from "@/components/header"
 import Hero from "@/components/hero"
 import FeaturedSweets from "@/components/featured-sweet"
-import Categories from "@/components/categories"
+// import Categories from "@/components/categories"
 import BestSellers from "@/components/best-sellers"
 import Testimonials from "@/components/testimonials"
 import SpecialOffers from "@/components/special-offer"
@@ -16,10 +16,10 @@ export default function Home() {
       <Header />
       <Hero />
       <FeaturedSweets />
-      <Categories />
       <BestSellers />
-      <Testimonials />
       <SpecialOffers />
+      {/* <Categories /> */}
+      <Testimonials />
       <Footer />
     </main>
   )

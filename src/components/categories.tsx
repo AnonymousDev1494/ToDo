@@ -2,7 +2,7 @@
 
 import { useRef } from "react"
 import { motion, useInView } from "framer-motion"
-import { Candy, Gift, Cake, Leaf, Wheat, Sparkles } from "lucide-react"
+import {Droplet, Gift, Slice, Nut, Wheat, Sparkles } from "lucide-react"
 
 export default function Categories() {
   const sectionRef = useRef(null)
@@ -11,7 +11,7 @@ export default function Categories() {
   const categories = [
     {
       name: "Milk Sweets",
-      icon: <Candy className="h-8 w-8" />,
+      icon: <Droplet className="h-8 w-8" />, // new icon
       color: "bg-[#e94560]",
       count: "25+ varieties",
     },
@@ -23,13 +23,13 @@ export default function Categories() {
     },
     {
       name: "Bengali Sweets",
-      icon: <Cake className="h-8 w-8" />,
+      icon: <Slice className="h-8 w-8" />, // new icon
       color: "bg-accent",
       count: "20+ varieties",
     },
     {
       name: "Dry Fruit Sweets",
-      icon: <Leaf className="h-8 w-8" />,
+      icon: <Nut className="h-8 w-8" />, // new icon
       color: "bg-green-500",
       count: "12+ varieties",
     },
@@ -46,6 +46,7 @@ export default function Categories() {
       count: "Seasonal",
     },
   ]
+  
 
   const container = {
     hidden: { opacity: 0 },
@@ -63,13 +64,13 @@ export default function Categories() {
   }
 
   return (
-    <section ref={sectionRef} className="py-16">
-      <div className="container-custom">
+    <section ref={sectionRef} className="py-16 px-4 md:px-8 lg:px-16">
+      <div className="">
         <motion.h2
           initial={{ opacity: 0, y: 20 }}
           animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
           transition={{ duration: 0.5 }}
-          className="section-title"
+          className=" section-title text-2xl md:text-3xl font-bold mb-4"
         >
           Browse by Category
         </motion.h2>
@@ -85,7 +86,7 @@ export default function Categories() {
               key={index}
               variants={item}
               whileHover={{ y: -5, transition: { duration: 0.2 } }}
-              className="bg-white dark:bg-gray-800 rounded-lg shadow-md overflow-hidden cursor-pointer"
+              className="bg-white :bg-gray-800 rounded-lg shadow-md overflow-hidden cursor-pointer"
             >
               <div className="p-6 text-center">
                 <div
@@ -94,7 +95,7 @@ export default function Categories() {
                   {category.icon}
                 </div>
                 <h3 className="font-semibold mb-1">{category.name}</h3>
-                <p className="text-sm text-gray-500 dark:text-gray-400">{category.count}</p>
+                <p className="text-sm text-gray-500 :text-gray-400">{category.count}</p>
               </div>
             </motion.div>
           ))}

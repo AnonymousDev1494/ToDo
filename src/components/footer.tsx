@@ -46,8 +46,8 @@ export default function Footer() {
   ]
 
   return (
-    <footer className="bg-gray-900 text-white pt-16 pb-8">
-      <div className="container-custom">
+    <footer className="bg-gray-900 text-white pt-16 pb-8 px-4 md:px-8 lg:px-16">
+      <div className="">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8 mb-12">
           <div className="lg:col-span-2">
             <motion.div
@@ -58,7 +58,7 @@ export default function Footer() {
             >
               <Link href="/" className="inline-block mb-6">
                 <span className="text-2xl font-bold text-[#e94560]">
-                  Sweet<span className="text-[#ffa500]">Delights</span>
+                Agarwal <span className="text-[#ffa500]">Sweets</span>
                 </span>
               </Link>
               <p className="text-gray-400 mb-6 max-w-md">
@@ -112,12 +112,12 @@ export default function Footer() {
         >
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
             <div className="text-gray-400 text-sm">
-              <p>© {new Date().getFullYear()} SweetDelights. All rights reserved.</p>
+              <p>© {new Date().getFullYear()} Agarwal Sweets. All rights reserved.</p>
             </div>
             <div className="flex flex-col sm:flex-row gap-4 md:justify-end">
               <div className="flex items-center text-gray-400">
                 <Mail className="h-4 w-4 mr-2" />
-                <span>info@sweetdelights.com</span>
+                <span>info@Agarwal Sweets.com</span>
               </div>
               <div className="flex items-center text-gray-400">
                 <Phone className="h-4 w-4 mr-2" />

@@ -1,15 +1,17 @@
 import type React from "react"
 import type { Metadata } from "next"
-import { Inter } from "next/font/google"
 import "./globals.css"
-import { ThemeProvider } from "@/components/theme-provider"
+import { Pacifico, Quicksand } from "next/font/google"
 
-const inter = Inter({ subsets: ["latin"] })
+const pacifico = Pacifico({ weight: "400", subsets: ["latin"] })
+const quicksand = Quicksand({ subsets: ["latin"] })
 
 export const metadata: Metadata = {
-  title: "Sweet Shop",
+  title: "Agarwal Sweets",
   description: "Delecious sweets",
 }
+const bodyClass = `${quicksand.className} ${pacifico.className}`
+
 
 export default function RootLayout({
   children,
@@ -18,10 +20,8 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className}>
-        {/* <ThemeProvider attribute="class" defaultTheme="light" enableSystem> */}
+      <body className={bodyClass}>
           {children}
-        {/* </ThemeProvider> */}
       </body>
     </html>
   )

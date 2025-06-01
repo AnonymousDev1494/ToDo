@@ -4,6 +4,7 @@ import { useRef } from "react"
 import { motion, useInView } from "framer-motion"
 import { ChevronLeft, ChevronRight, Eye } from "lucide-react"
 import { Button } from "./ui/button"
+import Image from "next/image"
 
 export default function FeaturedSweets() {
   const sectionRef = useRef(null)
@@ -15,35 +16,42 @@ export default function FeaturedSweets() {
       title: "Kaju Katli",
       category: "Cashew Based",
       price: "₹650/kg",
-      thumbnail: "/placeholder.svg?height=400&width=600",
+      thumbnail: "/images/kaju_katli.jpg?height=400&width=600",
     },
     {
       id: 2,
       title: "Gulab Jamun",
       category: "Milk Based",
       price: "₹450/kg",
-      thumbnail: "/placeholder.svg?height=400&width=600",
+      thumbnail: "/images/gulab_jamun.jpg?height=400&width=600",
     },
     {
       id: 3,
       title: "Rasgulla",
       category: "Bengali Sweet",
       price: "₹500/kg",
-      thumbnail: "/placeholder.svg?height=400&width=600",
+      thumbnail: "/images/rasgulla.jpg?height=400&width=600",
     },
     {
       id: 4,
       title: "Motichoor Ladoo",
       category: "Gram Flour Based",
       price: "₹550/kg",
-      thumbnail: "/placeholder.svg?height=400&width=600",
+      thumbnail: "/images/laddoo.jpg?height=400&width=600",
     },
     {
       id: 5,
-      title: "Jalebi",
+      title: "Ghewar",
       category: "Fried Sweet",
       price: "₹400/kg",
-      thumbnail: "/placeholder.svg?height=400&width=600",
+      thumbnail: "/images/ghewar.jpg?height=400&width=600",
+    },
+    {
+      id: 6,
+      title: "Modak",
+      category: "Pooja Sweet",
+      price: "₹400/kg",
+      thumbnail: "/images/modak.jpg?height=400&width=600",
     },
   ]
 
@@ -62,7 +70,7 @@ export default function FeaturedSweets() {
     show: { opacity: 1, y: 0, transition: { duration: 0.5 } },
   }
 
-  const scrollContainer = (direction:any) => {
+  const scrollContainer = (direction:unknown) => {
     const container = document.getElementById("featured-sweets-container")
     if (container) {
       const scrollAmount = direction === "left" ? -container.offsetWidth / 2 : container.offsetWidth / 2
@@ -71,8 +79,8 @@ export default function FeaturedSweets() {
   }
 
   return (
-    <section ref={sectionRef} className="py-16 bg-gray-50 dark:bg-gray-900">
-      <div className="container-custom">
+    <section ref={sectionRef} className="py-16 bg-gradient-to-r from-[#e94560]/10 via-[#ffa500]/10 to-accent/10 px-4 md:px-8 lg:px-16 :bg-gray-900">
+      <div className="w-full">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
@@ -103,7 +111,9 @@ export default function FeaturedSweets() {
               <motion.div key={sweet.id} variants={item} className="flex-shrink-0 w-[280px] md:w-[320px] snap-start">
                 <div className="sweet-[#ffffff] group">
                   <div className="relative aspect-square overflow-hidden rounded-lg">
-                    <img
+                    <Image
+                      height={800}
+                      width={800}
                       src={sweet.thumbnail || "/placeholder.svg"}
                       alt={sweet.title}
                       className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
@@ -119,7 +129,7 @@ export default function FeaturedSweets() {
                   </div>
                   <div className="p-3">
                     <h3 className="font-semibold text-lg mb-1 line-clamp-1">{sweet.title}</h3>
-                    <p className="text-sm text-gray-500 dark:text-gray-400">{sweet.category}</p>
+                    <p className="text-sm text-gray-500 :text-gray-400">{sweet.category}</p>
                   </div>
                 </div>
               </motion.div>

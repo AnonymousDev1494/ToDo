@@ -30,7 +30,7 @@ export default function PromoBanner() {
           transition={{ duration: 0.3 }}
           className="bg-[#e94560] text-white text-center py-3 px-4 relative"
         >
-          <div className="container-custom flex justify-center items-center ">
+          <div className="container flex justify-center items-center ">
             <p className="text-sm md:text-base font-medium">
               Special Festive Offer - 15% Off on All Sweet Boxes for Diwali!
             </p>

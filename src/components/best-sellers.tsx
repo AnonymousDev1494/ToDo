@@ -4,6 +4,7 @@ import { useRef } from "react"
 import { motion, useInView } from "framer-motion"
 import { Star, Eye } from "lucide-react"
 import { Button } from "./ui/button"
+import Image from "next/image"
 
 export default function BestSellers() {
   const sectionRef = useRef(null)
@@ -16,7 +17,7 @@ export default function BestSellers() {
       category: "Cashew Based",
       rating: 4.8,
       price: "₹750/kg",
-      thumbnail: "/placeholder.svg?height=400&width=600",
+      thumbnail: "/images/kaju_katli.jpg?height=400&width=600",
     },
     {
       id: 2,
@@ -24,15 +25,15 @@ export default function BestSellers() {
       category: "Flaky Sweet",
       rating: 4.6,
       price: "₹450/kg",
-      thumbnail: "/placeholder.svg?height=400&width=600",
+      thumbnail: "/images/sonpapdi.jpg?height=400&width=600",
     },
     {
       id: 3,
-      title: "Rasmalai",
-      category: "Bengali Sweet",
+      title: "Rabri",
+      category: "Indian Sweet",
       rating: 4.9,
       price: "₹650/kg",
-      thumbnail: "/placeholder.svg?height=400&width=600",
+      thumbnail: "/images/rabri.jpg?height=400&width=600",
     },
     {
       id: 4,
@@ -40,15 +41,15 @@ export default function BestSellers() {
       category: "Gram Flour Based",
       rating: 4.7,
       price: "₹550/kg",
-      thumbnail: "/placeholder.svg?height=400&width=600",
+      thumbnail: "/images/panjeeri_laddo.jpg?height=400&width=600",
     },
     {
       id: 5,
-      title: "Mysore Pak",
+      title: "Nariyal laddo",
       category: "South Indian",
       rating: 4.5,
       price: "₹600/kg",
-      thumbnail: "/placeholder.svg?height=400&width=600",
+      thumbnail: "/images/nariyal_laddoo.jpg?height=400&width=600",
     },
     {
       id: 6,
@@ -56,7 +57,78 @@ export default function BestSellers() {
       category: "Milk Based",
       rating: 4.4,
       price: "₹500/kg",
-      thumbnail: "/placeholder.svg?height=400&width=600",
+      thumbnail: "/images/peda.jpg?height=400&width=600",
+    },
+    {
+      id: 7,
+      title: "Chena",
+      category: "Milk Based",
+      rating: 4.4,
+      price: "₹500/kg",
+      thumbnail: "/images/chenna_cherry.jpg?height=400&width=600",
+    },
+    {
+      id: 8,
+      title: "Chamcham",
+      category: "Milk Based",
+      rating: 4.4,
+      price: "₹500/kg",
+      thumbnail: "/images/chamcham.jpg?height=400&width=600",
+    },
+    {
+      id: 8.5,
+      title: "Barfi",
+      category: "Milk Based",
+      rating: 4.4,
+      price: "₹500/kg",
+      thumbnail: "/images/tricolor_barfi.jpg?height=400&width=600",
+    },
+    {
+      id: 9,
+      title: "Paan",
+      category: "Milk Based",
+      rating: 4.4,
+      price: "₹500/kg",
+      thumbnail: "/images/paan.jpg?height=400&width=600",
+    },
+    {
+      id: 10,
+      title: "Nariyal Laddoo",
+      category: "Milk Based",
+      rating: 4.4,
+      price: "₹500/kg",
+      thumbnail: "/images/nariyal_laddoo.jpg?height=400&width=600",
+    },{
+      id: 11,
+      title: "Khoya Special Barfi",
+      category: "Milk Based",
+      rating: 4.4,
+      price: "₹500/kg",
+      thumbnail: "/images/khoya.jpg?height=400&width=600",
+    },
+    {
+      id: 12,
+      title: "Bhujia",
+      category: "Gram Based",
+      rating: 4.4,
+      price: "₹500/kg",
+      thumbnail: "/images/bhujia.jpg?height=400&width=600",
+    },
+    {
+      id: 13,
+      title: "Khasta",
+      category: "WHeat Based",
+      rating: 4.4,
+      price: "₹500/kg",
+      thumbnail: "/images/khasta.jpg?height=400&width=600",
+    },
+    {
+      id: 14,
+      title: "Mathri",
+      category: "Wheat Based",
+      rating: 4.4,
+      price: "₹500/kg",
+      thumbnail: "/images/matri.jpg?height=400&width=600",
     },
   ]
 
@@ -76,13 +148,13 @@ export default function BestSellers() {
   }
 
   return (
-    <section ref={sectionRef} className="py-16 bg-gray-50 dark:bg-gray-900">
-      <div className="container-custom">
+    <section ref={sectionRef} className="py-16 px-4 md:px-8 lg:px-16 bg-gray :bg-gray-900">
+      <div className="">
         <motion.h2
           initial={{ opacity: 0, y: 20 }}
           animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
           transition={{ duration: 0.5 }}
-          className="section-title"
+          className=" section-title text-2xl md:text-3xl font-bold mb-4"
         >
           Our Best Sellers
         </motion.h2>
@@ -91,7 +163,7 @@ export default function BestSellers() {
           variants={container}
           initial="hidden"
           animate={isInView ? "show" : "hidden"}
-          className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6"
+          className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 lg:gap-6 md:gap-3 gap-2"
         >
           {bestSellers.map((sweet) => (
             <motion.div
@@ -101,7 +173,9 @@ export default function BestSellers() {
               className="sweet-[#ffffff] group"
             >
               <div className="relative aspect-square overflow-hidden rounded-t-lg">
-                <img
+                <Image
+                height={800}
+                width={800}
                   src={sweet.thumbnail || "/placeholder.svg"}
                   alt={sweet.title}
                   className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
@@ -115,9 +189,9 @@ export default function BestSellers() {
                   <div className="text-white font-bold">{sweet.price}</div>
                 </div>
               </div>
-              <div className="p-4 bg-white dark:bg-gray-800">
+              <div className="p-4 bg-white :bg-gray-800">
                 <h3 className="font-semibold text-lg mb-1">{sweet.title}</h3>
-                <p className="text-sm text-gray-500 dark:text-gray-400 mb-2">{sweet.category}</p>
+                <p className="text-sm text-gray-500 :text-gray-400 mb-2">{sweet.category}</p>
                 <div className="flex items-center">
                   <Star className="h-4 w-4 text-yellow-500 mr-1" fill="currentColor" />
                   <span className="text-sm font-medium">{sweet.rating}</span>

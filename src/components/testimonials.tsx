@@ -15,7 +15,7 @@ export default function Testimonials() {
       role: "Sweet Lover",
       avatar: "/placeholder.svg?height=100&width=100",
       content:
-        "SweetDelights has the most authentic taste of traditional Indian sweets. Their Kaju Katli reminds me of my grandmother's recipe. Will definitely order again!",
+        "Agarwal Sweets has the most authentic taste of traditional Indian sweets. Their Kaju Katli reminds me of my grandmother's recipe. Will definitely order again!",
       rating: 5,
     },
     {
@@ -33,7 +33,7 @@ export default function Testimonials() {
       role: "Food Blogger",
       avatar: "/placeholder.svg?height=100&width=100",
       content:
-        "As someone who reviews food for a living, I can confidently say that SweetDelights offers some of the finest Indian sweets in the city. Pure ingredients and authentic taste.",
+        "As someone who reviews food for a living, I can confidently say that Agarwal Sweets offers some of the finest Indian sweets in the city. Pure ingredients and authentic taste.",
       rating: 4,
     },
   ]
@@ -54,13 +54,13 @@ export default function Testimonials() {
   }
 
   return (
-    <section ref={sectionRef} className="py-16">
-      <div className="container-custom">
+    <section ref={sectionRef} className="py-16 px-4 md:px-8 lg:px-16">
+      <div className="">
         <motion.h2
           initial={{ opacity: 0, y: 20 }}
           animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
           transition={{ duration: 0.5 }}
-          className="section-title"
+          className=" section-title text-2xl md:text-3xl font-bold mb-4"
         >
           What Our Customers Say
         </motion.h2>
@@ -75,29 +75,29 @@ export default function Testimonials() {
             <motion.div
               key={testimonial.id}
               variants={item}
-              className="bg-white dark:bg-gray-800 rounded-lg shadow-lg p-6 relative"
+              className="bg-white :bg-gray-800 rounded-lg shadow-lg p-6 relative"
             >
               <div className="absolute top-6 right-6 text-[#e94560] opacity-20">
                 <Quote className="h-12 w-12" />
               </div>
               <div className="flex items-center mb-4">
-                <img
+                {/* <img
                   src={testimonial.avatar || "/placeholder.svg"}
                   alt={testimonial.name}
                   className="w-12 h-12 rounded-full object-cover mr-4"
-                />
+                /> */}
                 <div>
                   <h3 className="font-semibold">{testimonial.name}</h3>
-                  <p className="text-sm text-gray-500 dark:text-gray-400">{testimonial.role}</p>
+                  <p className="text-sm text-gray-500 :text-gray-400">{testimonial.role}</p>
                 </div>
               </div>
-              <p className="mb-4 text-gray-700 dark:text-gray-300 relative z-10">{testimonial.content}</p>
+              <p className="mb-4 text-gray-700 :text-gray-300 relative z-10">{testimonial.content}</p>
               <div className="flex">
                 {[...Array(5)].map((_, i) => (
                   <Star
                     key={i}
                     className={`h-4 w-4 ${
-                      i < testimonial.rating ? "text-yellow-500 fill-yellow-500" : "text-gray-300 dark:text-gray-600"
+                      i < testimonial.rating ? "text-yellow-500 fill-yellow-500" : "text-gray-300 :text-gray-600"
                     }`}
                   />
                 ))}

@@ -78,8 +78,8 @@ export default function Pricing() {
   }
 
   return (
-    <section ref={sectionRef} className="py-16 bg-gray-50 dark:bg-gray-900">
-      <div className="container-custom">
+    <section ref={sectionRef} className="py-16 bg-gray-50 :bg-gray-900">
+      <div className="container">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
@@ -87,7 +87,7 @@ export default function Pricing() {
           className="text-center mb-12"
         >
           <h2 className="section-title">Choose Your Plan</h2>
-          <p className="text-lg text-gray-600 dark:text-gray-400 max-w-2xl mx-auto">
+          <p className="text-lg text-gray-600 :text-gray-400 max-w-2xl mx-auto">
             Select the perfect plan for your viewing needs. All plans include a free trial period.
           </p>
         </motion.div>
@@ -102,7 +102,7 @@ export default function Pricing() {
             <motion.div
               key={index}
               variants={item}
-              className={`bg-white dark:bg-gray-800 rounded-lg shadow-lg overflow-hidden relative ${
+              className={`bg-white :bg-gray-800 rounded-lg shadow-lg overflow-hidden relative ${
                 plan.popular ? "[ #e94560]-2 [ #e94560]-[#e94560]" : ""
               }`}
             >
@@ -113,25 +113,25 @@ export default function Pricing() {
                 <h3 className="text-xl font-bold mb-2">{plan.name}</h3>
                 <div className="mb-4">
                   <span className="text-3xl font-bold">{plan.price}</span>
-                  <span className="text-gray-500 dark:text-gray-400"> {plan.period}</span>
+                  <span className="text-gray-500 :text-gray-400"> {plan.period}</span>
                 </div>
-                <p className="text-gray-600 dark:text-gray-400 mb-6">{plan.description}</p>
+                <p className="text-gray-600 :text-gray-400 mb-6">{plan.description}</p>
                 <Button
                   className={`w-full ${
                     plan.popular
-                      ? "bg-[#e94560] hover:bg-[#e94560]-dark"
-                      : "bg-gray-800 dark:bg-gray-700 hover:bg-gray-700 dark:hover:bg-gray-600"
+                      ? "bg-[#e94560] hover:bg-[#e94560]-"
+                      : "bg-gray-800 :bg-gray-700 hover:bg-gray-700 :hover:bg-gray-600"
                   }`}
                 >
                   {plan.buttonText}
                 </Button>
               </div>
-              <div className="p-6 bg-gray-50 dark:bg-gray-900/50">
+              <div className="p-6 bg-gray-50 :bg-gray-900/50">
                 <ul className="space-y-3">
                   {plan.features.map((feature, i) => (
                     <li key={i} className="flex items-start">
                       <Check className="h-5 w-5 text-green-500 mr-2 flex-shrink-0" />
-                      <span className="text-gray-600 dark:text-gray-400">{feature}</span>
+                      <span className="text-gray-600 :text-gray-400">{feature}</span>
                     </li>
                   ))}
                 </ul>

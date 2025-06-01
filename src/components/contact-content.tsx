@@ -55,10 +55,10 @@ export default function ContactContent() {
   }
 
   return (
-    <div className="bg-white dark:bg-gray-900">
+    <div className="bg-white :bg-gray-900">
       {/* Hero Section */}
       <section ref={sectionRef} className="py-16 bg-gradient-to-r from-[#e94560]/10 via-[#ffa500]/10 to-accent/10">
-        <div className="container-custom">
+        <div className="container">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
@@ -66,8 +66,8 @@ export default function ContactContent() {
             className="text-center mb-12"
           >
             <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-4">Contact Us</h1>
-            <p className="text-lg text-gray-600 dark:text-gray-400 max-w-3xl mx-auto">
-              We'd love to hear from you! Reach out with any questions, feedback, or to place a special order.
+            <p className="text-lg text-gray-600 :text-gray-400 max-w-3xl mx-auto">
+            {`We'd love to hear from you! Reach out with any questions, feedback, or to place a special order.`}
             </p>
           </motion.div>
 
@@ -78,13 +78,13 @@ export default function ContactContent() {
             className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6"
           >
             {contactInfo.map((item, index) => (
-              <motion.div key={index} variants={fadeIn} className="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-md">
+              <motion.div key={index} variants={fadeIn} className="bg-white :bg-gray-800 p-6 rounded-lg shadow-md">
                 <div className="bg-brand-[#e94560]/10 text-brand-[#e94560] rounded-full w-12 h-12 flex items-center justify-center mb-4">
                   {item.icon}
                 </div>
                 <h3 className="text-lg font-bold mb-2">{item.title}</h3>
                 {item.details.map((detail, i) => (
-                  <p key={i} className="text-gray-600 dark:text-gray-400">
+                  <p key={i} className="text-gray-600 :text-gray-400">
                     {detail}
                   </p>
                 ))}
@@ -96,13 +96,13 @@ export default function ContactContent() {
 
       {/* Contact Form */}
       <section ref={formRef} className="py-16">
-        <div className="container-custom">
+        <div className="container">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
             <motion.div
               initial={{ opacity: 0, x: -30 }}
               animate={isFormInView ? { opacity: 1, x: 0 } : { opacity: 0, x: -30 }}
               transition={{ duration: 0.5 }}
-              className="bg-white dark:bg-gray-800 p-8 rounded-lg shadow-lg"
+              className="bg-white :bg-gray-800 p-8 rounded-lg shadow-lg"
             >
               <h2 className="text-2xl font-bold mb-6">Send Us a Message</h2>
               <form className="space-y-6">
@@ -158,7 +158,7 @@ export default function ContactContent() {
               <div className="space-y-6">
                 <div>
                   <h3 className="text-lg font-semibold mb-2">Do you offer delivery services?</h3>
-                  <p className="text-gray-600 dark:text-gray-400">
+                  <p className="text-gray-600 :text-gray-400">
                     Yes, we offer delivery within the city limits for a nominal fee. For bulk orders and special
                     occasions, delivery charges may be waived. We also ship our dry sweets nationwide through courier
                     services.
@@ -167,7 +167,7 @@ export default function ContactContent() {
 
                 <div>
                   <h3 className="text-lg font-semibold mb-2">How far in advance should I place an order?</h3>
-                  <p className="text-gray-600 dark:text-gray-400">
+                  <p className="text-gray-600 :text-gray-400">
                     For regular orders, 24 hours notice is appreciated. For large orders or during festival seasons, we
                     recommend placing orders 3-5 days in advance to ensure availability.
                   </p>
@@ -175,7 +175,7 @@ export default function ContactContent() {
 
                 <div>
                   <h3 className="text-lg font-semibold mb-2">Do you cater for events?</h3>
-                  <p className="text-gray-600 dark:text-gray-400">
+                  <p className="text-gray-600 :text-gray-400">
                     Yes, we offer catering services for weddings, corporate events, and other special occasions. Please
                     contact us directly to discuss your requirements and get a custom quote.
                   </p>
@@ -185,7 +185,7 @@ export default function ContactContent() {
                   <h3 className="text-lg font-semibold mb-2">
                     Are your sweets suitable for people with dietary restrictions?
                   </h3>
-                  <p className="text-gray-600 dark:text-gray-400">
+                  <p className="text-gray-600 :text-gray-400">
                     We offer a range of options including sugar-free sweets and some vegan alternatives. Please inform
                     us about any specific dietary requirements when placing your order.
                   </p>
@@ -193,7 +193,7 @@ export default function ContactContent() {
 
                 <div>
                   <h3 className="text-lg font-semibold mb-2">What is the shelf life of your sweets?</h3>
-                  <p className="text-gray-600 dark:text-gray-400">
+                  <p className="text-gray-600 :text-gray-400">
                     Most of our milk-based sweets are best consumed within 2-3 days when refrigerated. Dry sweets like
                     Soan Papdi and Kaju Katli can last up to 2 weeks when stored properly in an airtight container.
                   </p>

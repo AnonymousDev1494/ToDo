@@ -4,6 +4,7 @@ import { useRef } from "react"
 import { motion, useInView } from "framer-motion"
 import { Gift, ShoppingBag } from "lucide-react"
 import { Button } from "./ui/button"
+import Image from "next/image"
 
 
 export default function SpecialOffers() {
@@ -16,7 +17,7 @@ export default function SpecialOffers() {
       title: "Diwali Special Box",
       description: "A premium collection of 12 varieties of traditional sweets perfect for Diwali celebrations.",
       price: "₹1,200",
-      image: "/placeholder.svg?height=400&width=600",
+      image: "/images/bhujia.jpg?height=400&width=600",
       badge: "Limited Edition",
     },
     {
@@ -24,7 +25,7 @@ export default function SpecialOffers() {
       title: "Assorted Gift Pack",
       description: "Our bestselling assortment featuring 8 varieties of handcrafted sweets in an elegant box.",
       price: "₹850",
-      image: "/placeholder.svg?height=400&width=600",
+      image: "/images/peda.jpg?height=400&width=600",
       badge: "Popular",
     },
     {
@@ -32,7 +33,7 @@ export default function SpecialOffers() {
       title: "Wedding Collection",
       description: "Luxurious sweet boxes perfect for wedding gifts and special occasions.",
       price: "₹1,500",
-      image: "/placeholder.svg?height=400&width=600",
+      image: "/images/kaju_katli.jpg?height=400&width=600",
       badge: "Premium",
     },
   ]
@@ -53,13 +54,13 @@ export default function SpecialOffers() {
   }
 
   return (
-    <section ref={sectionRef} className="py-16 bg-gradient-to-r from-[#e94560]/10 via-[#ffa500]/10 to-accent/10">
-      <div className="container-custom">
+    <section ref={sectionRef} className="py-16 px-4 md:px-8 lg:px-16 bg-gradient-to-r from-[#e94560]/10 via-[#ffa500]/10 to-accent/10">
+      <div className="">
         <motion.h2
           initial={{ opacity: 0, y: 20 }}
           animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
           transition={{ duration: 0.5 }}
-          className="section-title"
+          className=" section-title text-2xl md:text-3xl font-bold mb-4"
         >
           Special Gift Collections
         </motion.h2>
@@ -74,10 +75,10 @@ export default function SpecialOffers() {
             <motion.div
               key={offer.id}
               variants={item}
-              className="bg-white dark:bg-gray-800 rounded-lg shadow-lg overflow-hidden"
+              className="bg-white :bg-gray-800 rounded-lg shadow-lg overflow-hidden"
             >
               <div className="relative">
-                <img src={offer.image || "/placeholder.svg"} alt={offer.title} className="w-full h-48 object-cover" />
+                <Image height={800} width={800} src={offer.image || "/placeholder.svg"} alt={offer.title} className="w-full h-48 object-cover" />
                 {offer.badge && (
                   <div className="absolute top-4 right-4 bg-[#e94560] text-white text-xs font-bold px-3 py-1 rounded-full">
                     {offer.badge}
@@ -86,10 +87,10 @@ export default function SpecialOffers() {
               </div>
               <div className="p-6">
                 <h3 className="text-xl font-bold mb-2">{offer.title}</h3>
-                <p className="text-gray-600 dark:text-gray-400 mb-4">{offer.description}</p>
+                <p className="text-gray-600 :text-gray-400 mb-4">{offer.description}</p>
                 <div className="flex justify-between items-center">
                   <span className="text-2xl font-bold text-[#e94560]">{offer.price}</span>
-                  <Button className="bg-[#e94560] hover:bg-[#e94560]/90">
+                  <Button className="bg-[#e94560] text-white font-bold hover:bg-[#e94560]/90">
                     <Gift className="mr-2 h-4 w-4" /> View Details
                   </Button>
                 </div>
@@ -104,7 +105,7 @@ export default function SpecialOffers() {
           transition={{ duration: 0.5, delay: 0.3 }}
           className="text-center mt-12"
         >
-          <Button size="lg" className="bg-[#e94560] hover:bg-[#e94560]/90">
+          <Button size="lg" className="bg-[#e94560] text-white font-bold hover:bg-[#e94560]/90">
             <ShoppingBag className="mr-2 h-5 w-5" /> View All Collections
           </Button>
         </motion.div>

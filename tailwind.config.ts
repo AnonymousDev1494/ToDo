@@ -6,6 +6,7 @@ const config: Config = {
     "./components/**/*.{js,ts,jsx,tsx}",
     "./app/**/*.{js,ts,jsx,tsx}",
   ],
+  // darkMode: false,
   theme: {
     extend: {
       colors: {
@@ -19,7 +20,7 @@ const config: Config = {
         border: "#e2e8f0",
         input: "#e2e8f0",
         ring: "#e94560",
-        [#ffffff]: "#ffffff",
+        // [#ffffff]: "#ffffff",
         popover: "#ffffff",
       },
       

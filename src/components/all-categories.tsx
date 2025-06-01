@@ -137,7 +137,7 @@ export default function AllCategories() {
 
   return (
     <section ref={sectionRef} className="py-16">
-      <div className="container-custom">
+      <div className="container">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
@@ -145,7 +145,7 @@ export default function AllCategories() {
           className="text-center mb-12"
         >
           <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-4">Our Sweet Categories</h1>
-          <p className="text-lg text-gray-600 dark:text-gray-400 max-w-3xl mx-auto">
+          <p className="text-lg text-gray-600 :text-gray-400 max-w-3xl mx-auto">
             Explore our extensive range of authentic Indian sweets, carefully crafted using traditional recipes and the
             finest ingredients.
           </p>
@@ -162,7 +162,7 @@ export default function AllCategories() {
               key={index}
               variants={item}
               whileHover={{ y: -5, transition: { duration: 0.2 } }}
-              className="bg-white dark:bg-gray-800 rounded-lg shadow-md overflow-hidden cursor-pointer"
+              className="bg-white :bg-gray-800 rounded-lg shadow-md overflow-hidden cursor-pointer"
             >
               <div className="p-6">
                 <div className="flex items-center mb-4">
@@ -173,17 +173,17 @@ export default function AllCategories() {
                   </div>
                   <div>
                     <h3 className="font-bold text-xl">{category.name}</h3>
-                    <p className="text-sm text-gray-500 dark:text-gray-400">{category.count}</p>
+                    <p className="text-sm text-gray-500 :text-gray-400">{category.count}</p>
                   </div>
                 </div>
-                <p className="text-gray-600 dark:text-gray-300 mb-4">{category.description}</p>
+                <p className="text-gray-600 :text-gray-300 mb-4">{category.description}</p>
                 <div className="mb-4">
                   <h4 className="font-semibold text-sm text-gray-500 mb-2">POPULAR ITEMS:</h4>
                   <div className="flex flex-wrap gap-2">
                     {category.popular.map((item, i) => (
                       <span
                         key={i}
-                        className="bg-gray-100 dark:bg-gray-700 text-gray-800 dark:text-gray-200 text-xs px-2 py-1 rounded-full"
+                        className="bg-gray-100 :bg-gray-700 text-gray-800 :text-gray-200 text-xs px-2 py-1 rounded-full"
                       >
                         {item}
                       </span>
