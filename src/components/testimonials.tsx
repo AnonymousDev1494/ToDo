@@ -13,7 +13,7 @@ export default function Testimonials() {
       id: 1,
       name: "Priya Sharma",
       role: "Sweet Lover",
-      avatar: "/placeholder.svg?height=100&width=100",
+      avatar: "/placeholder.svg",
       content:
         "Agarwal Sweets has the most authentic taste of traditional Indian sweets. Their Kaju Katli reminds me of my grandmother's recipe. Will definitely order again!",
       rating: 5,
@@ -22,7 +22,7 @@ export default function Testimonials() {
       id: 2,
       name: "Rahul Patel",
       role: "Regular Customer",
-      avatar: "/placeholder.svg?height=100&width=100",
+      avatar: "/placeholder.svg",
       content:
         "I ordered a gift box for Diwali and everyone loved it. The sweets were fresh, perfectly sweet, and beautifully packaged. Highly recommend their festive collections.",
       rating: 5,
@@ -31,7 +31,7 @@ export default function Testimonials() {
       id: 3,
       name: "Ananya Gupta",
       role: "Food Blogger",
-      avatar: "/placeholder.svg?height=100&width=100",
+      avatar: "/placeholder.svg",
       content:
         "As someone who reviews food for a living, I can confidently say that Agarwal Sweets offers some of the finest Indian sweets in the city. Pure ingredients and authentic taste.",
       rating: 4,

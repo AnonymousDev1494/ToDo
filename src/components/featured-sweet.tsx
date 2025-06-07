@@ -16,42 +16,42 @@ export default function FeaturedSweets() {
       title: "Kaju Katli",
       category: "Cashew Based",
       price: "₹650/kg",
-      thumbnail: "/images/kaju_katli.jpg?height=400&width=600",
+      thumbnail: "/images/kaju_katli.jpg",
     },
     {
       id: 2,
       title: "Gulab Jamun",
       category: "Milk Based",
       price: "₹450/kg",
-      thumbnail: "/images/gulab_jamun.jpg?height=400&width=600",
+      thumbnail: "/images/gulab_jamun.jpg",
     },
     {
       id: 3,
       title: "Rasgulla",
       category: "Bengali Sweet",
       price: "₹500/kg",
-      thumbnail: "/images/rasgulla.jpg?height=400&width=600",
+      thumbnail: "/images/rasgulla.jpg",
     },
     {
       id: 4,
       title: "Motichoor Ladoo",
       category: "Gram Flour Based",
       price: "₹550/kg",
-      thumbnail: "/images/laddoo.jpg?height=400&width=600",
+      thumbnail: "/images/laddoo.jpg",
     },
     {
       id: 5,
       title: "Ghewar",
       category: "Fried Sweet",
       price: "₹400/kg",
-      thumbnail: "/images/ghewar.jpg?height=400&width=600",
+      thumbnail: "/images/ghewar.jpg",
     },
     {
       id: 6,
       title: "Modak",
       category: "Pooja Sweet",
       price: "₹400/kg",
-      thumbnail: "/images/modak.jpg?height=400&width=600",
+      thumbnail: "/images/modak.jpg",
     },
   ]
 
@@ -112,8 +112,8 @@ export default function FeaturedSweets() {
                 <div className="sweet-[#ffffff] group">
                   <div className="relative aspect-square overflow-hidden rounded-lg">
                     <Image
-                      height={800}
-                      width={800}
+                      height={400}
+                      width={600}
                       src={sweet.thumbnail || "/placeholder.svg"}
                       alt={sweet.title}
                       className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"

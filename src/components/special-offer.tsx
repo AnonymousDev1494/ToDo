@@ -17,7 +17,7 @@ export default function SpecialOffers() {
       title: "Diwali Special Box",
       description: "A premium collection of 12 varieties of traditional sweets perfect for Diwali celebrations.",
       price: "₹1,200",
-      image: "/images/bhujia.jpg?height=400&width=600",
+      image: "/images/bhujia.jpg",
       badge: "Limited Edition",
     },
     {
@@ -25,7 +25,7 @@ export default function SpecialOffers() {
       title: "Assorted Gift Pack",
       description: "Our bestselling assortment featuring 8 varieties of handcrafted sweets in an elegant box.",
       price: "₹850",
-      image: "/images/peda.jpg?height=400&width=600",
+      image: "/images/peda.jpg",
       badge: "Popular",
     },
     {
@@ -33,7 +33,7 @@ export default function SpecialOffers() {
       title: "Wedding Collection",
       description: "Luxurious sweet boxes perfect for wedding gifts and special occasions.",
       price: "₹1,500",
-      image: "/images/kaju_katli.jpg?height=400&width=600",
+      image: "/images/kaju_katli.jpg",
       badge: "Premium",
     },
   ]
@@ -78,7 +78,7 @@ export default function SpecialOffers() {
               className="bg-white :bg-gray-800 rounded-lg shadow-lg overflow-hidden"
             >
               <div className="relative">
-                <Image height={800} width={800} src={offer.image || "/placeholder.svg"} alt={offer.title} className="w-full h-48 object-cover" />
+                <Image height={400} width={600} src={offer.image || "/placeholder.svg"} alt={offer.title} className="w-full h-48 object-cover" />
                 {offer.badge && (
                   <div className="absolute top-4 right-4 bg-[#e94560] text-white text-xs font-bold px-3 py-1 rounded-full">
                     {offer.badge}

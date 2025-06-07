@@ -15,19 +15,19 @@ export default function Hero() {
       title: "Authentic Indian Sweets Made with Love",
       description:
         "Handcrafted with traditional recipes passed down through generations. Pure ingredients, authentic taste.",
-      image: "/images/kaju_katli.jpg?height=800&width=1600",
+      image: "/images/kaju_katli.jpg",
       color: "from-[#e94560]/80 to-[#ffa500]/80",
     },
     {
       title: "Special Festive Collections",
       description: "Celebrate festivals with our special collections of traditional and modern Indian sweets.",
-      image: "/images/bhujia.jpg?height=800&width=1600",
+      image: "/images/bhujia.jpg",
       color: "from-[#ffa500]/80 to-accent/80",
     },
     {
       title: "Perfect Gifts for Every Occasion",
       description: "Beautifully packaged sweet boxes that make the perfect gift for your loved ones.",
-      image: "/images/ghewar.jpg?height=800&width=1600",
+      image: "/images/ghewar.jpg",
       color: "from-accent/80 to-[#e94560]/80",
     },
   ]
@@ -53,7 +53,7 @@ export default function Hero() {
         >
           <div className="absolute inset-0 bg-black/40 z-10" />
           <div className={`absolute inset-0 bg-gradient-to-r ${slide.color} mix-blend-multiply z-20`} />
-          <Image height={800} width={800} src={slide.image || "/placeholder.svg"} alt={slide.title} className="w-full h-full object-cover" />
+          <Image height={800} width={1600} src={slide.image || "/placeholder.svg"} alt={slide.title} className="w-full h-full object-cover" />
         </motion.div>
       ))}
 

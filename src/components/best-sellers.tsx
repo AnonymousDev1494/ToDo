@@ -1,14 +1,14 @@
 "use client"
 
 import { useRef } from "react"
-import { motion, useInView } from "framer-motion"
+import { motion } from "framer-motion"
 import { Star, Eye } from "lucide-react"
 import { Button } from "./ui/button"
 import Image from "next/image"
 
 export default function BestSellers() {
   const sectionRef = useRef(null)
-  const isInView = useInView(sectionRef, { once: true, amount: 0.2 })
+  // const isInView = useInView(sectionRef, { once: true, amount: 0.2 })
 
   const bestSellers = [
     {
@@ -17,7 +17,7 @@ export default function BestSellers() {
       category: "Cashew Based",
       rating: 4.8,
       price: "₹750/kg",
-      thumbnail: "/images/kaju_katli.jpg?height=400&width=600",
+      thumbnail: "/images/kaju_katli.jpg",
     },
     {
       id: 2,
@@ -25,7 +25,7 @@ export default function BestSellers() {
       category: "Flaky Sweet",
       rating: 4.6,
       price: "₹450/kg",
-      thumbnail: "/images/sonpapdi.jpg?height=400&width=600",
+      thumbnail: "/images/sonpapdi.jpg",
     },
     {
       id: 3,
@@ -33,7 +33,7 @@ export default function BestSellers() {
       category: "Indian Sweet",
       rating: 4.9,
       price: "₹650/kg",
-      thumbnail: "/images/rabri.jpg?height=400&width=600",
+      thumbnail: "/images/rabri.jpg",
     },
     {
       id: 4,
@@ -41,7 +41,7 @@ export default function BestSellers() {
       category: "Gram Flour Based",
       rating: 4.7,
       price: "₹550/kg",
-      thumbnail: "/images/panjeeri_laddo.jpg?height=400&width=600",
+      thumbnail: "/images/panjeeri_laddo.jpg",
     },
     {
       id: 5,
@@ -49,7 +49,7 @@ export default function BestSellers() {
       category: "South Indian",
       rating: 4.5,
       price: "₹600/kg",
-      thumbnail: "/images/nariyal_laddoo.jpg?height=400&width=600",
+      thumbnail: "/images/nariyal_laddoo.jpg",
     },
     {
       id: 6,
@@ -57,7 +57,7 @@ export default function BestSellers() {
       category: "Milk Based",
       rating: 4.4,
       price: "₹500/kg",
-      thumbnail: "/images/peda.jpg?height=400&width=600",
+      thumbnail: "/images/peda.jpg",
     },
     {
       id: 7,
@@ -65,7 +65,7 @@ export default function BestSellers() {
       category: "Milk Based",
       rating: 4.4,
       price: "₹500/kg",
-      thumbnail: "/images/chenna_cherry.jpg?height=400&width=600",
+      thumbnail: "/images/chenna_cherry.jpg",
     },
     {
       id: 8,
@@ -73,7 +73,7 @@ export default function BestSellers() {
       category: "Milk Based",
       rating: 4.4,
       price: "₹500/kg",
-      thumbnail: "/images/chamcham.jpg?height=400&width=600",
+      thumbnail: "/images/chamcham.jpg",
     },
     {
       id: 8.5,
@@ -81,7 +81,7 @@ export default function BestSellers() {
       category: "Milk Based",
       rating: 4.4,
       price: "₹500/kg",
-      thumbnail: "/images/tricolor_barfi.jpg?height=400&width=600",
+      thumbnail: "/images/tricolor_barfi.jpg",
     },
     {
       id: 9,
@@ -89,7 +89,7 @@ export default function BestSellers() {
       category: "Milk Based",
       rating: 4.4,
       price: "₹500/kg",
-      thumbnail: "/images/paan.jpg?height=400&width=600",
+      thumbnail: "/images/paan.jpg",
     },
     {
       id: 10,
@@ -97,14 +97,14 @@ export default function BestSellers() {
       category: "Milk Based",
       rating: 4.4,
       price: "₹500/kg",
-      thumbnail: "/images/nariyal_laddoo.jpg?height=400&width=600",
+      thumbnail: "/images/nariyal_laddoo.jpg",
     },{
       id: 11,
       title: "Khoya Special Barfi",
       category: "Milk Based",
       rating: 4.4,
       price: "₹500/kg",
-      thumbnail: "/images/khoya.jpg?height=400&width=600",
+      thumbnail: "/images/khoya.jpg",
     },
     {
       id: 12,
@@ -112,7 +112,7 @@ export default function BestSellers() {
       category: "Gram Based",
       rating: 4.4,
       price: "₹500/kg",
-      thumbnail: "/images/bhujia.jpg?height=400&width=600",
+      thumbnail: "/images/bhujia.jpg",
     },
     {
       id: 13,
@@ -120,7 +120,7 @@ export default function BestSellers() {
       category: "WHeat Based",
       rating: 4.4,
       price: "₹500/kg",
-      thumbnail: "/images/khasta.jpg?height=400&width=600",
+      thumbnail: "/images/khasta.jpg",
     },
     {
       id: 14,
@@ -128,7 +128,7 @@ export default function BestSellers() {
       category: "Wheat Based",
       rating: 4.4,
       price: "₹500/kg",
-      thumbnail: "/images/matri.jpg?height=400&width=600",
+      thumbnail: "/images/matri.jpg",
     },
   ]
 
@@ -152,7 +152,9 @@ export default function BestSellers() {
       <div className="">
         <motion.h2
           initial={{ opacity: 0, y: 20 }}
-          animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
+          // animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+
           transition={{ duration: 0.5 }}
           className=" section-title text-2xl md:text-3xl font-bold mb-4"
         >
@@ -162,7 +164,9 @@ export default function BestSellers() {
         <motion.div
           variants={container}
           initial="hidden"
-          animate={isInView ? "show" : "hidden"}
+          // animate={isInView ? "show" : "hidden"}
+          animate={"show"}
+
           className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 lg:gap-6 md:gap-3 gap-2"
         >
           {bestSellers.map((sweet) => (
@@ -174,8 +178,8 @@ export default function BestSellers() {
             >
               <div className="relative aspect-square overflow-hidden rounded-t-lg">
                 <Image
-                height={800}
-                width={800}
+                height={400}
+                width={600}
                   src={sweet.thumbnail || "/placeholder.svg"}
                   alt={sweet.title}
                   className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"

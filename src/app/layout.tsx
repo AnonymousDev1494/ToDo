@@ -8,10 +8,10 @@ const quicksand = Quicksand({ subsets: ["latin"] })
 
 export const metadata: Metadata = {
   title: "Agarwal Sweets",
-  description: "Delecious sweets",
+  description: "Delicious sweets",
 }
-const bodyClass = `${quicksand.className} ${pacifico.className}`
 
+const bodyClass = `${quicksand.className} ${pacifico.className}`
 
 export default function RootLayout({
   children,
@@ -20,10 +20,15 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <head>
+        {/* ✅ Viewport meta tag */}
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>{`Agarwal Sweets`}</title>
+        <meta name="description" content="Delicious sweets" />
+      </head>
       <body className={bodyClass}>
-          {children}
+        {children}
       </body>
     </html>
   )
 }
-

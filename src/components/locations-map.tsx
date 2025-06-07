@@ -138,6 +138,8 @@ export default function LocationsMap() {
                         src={locations[activeLocation].image || "/placeholder.svg"}
                         alt={locations[activeLocation].name}
                         className="w-full h-auto rounded-lg"
+                        width={400}
+                        height={400}
                       />
                     </div>
                     <div className="md:w-2/3">

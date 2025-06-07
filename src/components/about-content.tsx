@@ -74,14 +74,14 @@ export default function AboutContent() {
     {
       name: "Rajesh Sharma",
       role: "Master Sweet Maker",
-      image: "/images/founder_2.jpg?height=400&width=400",
+      image: "/images/founder_2.jpg",
       description:
         "With over 30 years of experience, Rajesh leads our production with unmatched expertise in traditional sweet making.",
     },
     {
       name: "Amit Singh",
       role: "Quality Manager",
-      image: "/images/founder.jpg?height=400&width=400",
+      image: "/images/founder.jpg",
       description: "Ensures that every sweet meets our strict quality standards before reaching our customers.",
     },
   ]
