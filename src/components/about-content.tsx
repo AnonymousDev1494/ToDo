@@ -74,14 +74,14 @@ export default function AboutContent() {
     {
       name: "Rajesh Sharma",
       role: "Master Sweet Maker",
-      image: "/images/founder_2.jpg",
+      image: "/images/founder_2.JPG",
       description:
         "With over 30 years of experience, Rajesh leads our production with unmatched expertise in traditional sweet making.",
     },
     {
       name: "Amit Singh",
       role: "Quality Manager",
-      image: "/images/founder.jpg",
+      image: "/images/founder.JPG",
       description: "Ensures that every sweet meets our strict quality standards before reaching our customers.",
     },
   ]
@@ -125,7 +125,7 @@ export default function AboutContent() {
               transition={{ duration: 0.5, delay: 0.2 }}
             >
               <div className="relative rounded-lg overflow-hidden shadow-xl">
-                <Image  src="/images/shop.jpg?height=600&width=800" height={800} width={800} alt="Sweet shop heritage" className="w-full h-auto" />
+                <Image  src="/images/shop.JPG?height=600&width=800" height={800} width={800} alt="Sweet shop heritage" className="w-full h-auto" />
               </div>
             </motion.div>
 

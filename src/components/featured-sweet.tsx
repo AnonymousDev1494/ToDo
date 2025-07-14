@@ -16,14 +16,14 @@ export default function FeaturedSweets() {
       title: "Modak",
       category: "Modak",
       price: "₹650/kg",
-      thumbnail: "/images/modak.jpg",
+      thumbnail: "/images/modak.JPG",
     },
     {
       id: 2,
       title: "Gulab Jamun",
       category: "Milk Based",
       price: "₹450/kg",
-      thumbnail: "/images/gulab_jamun.jpg",
+      thumbnail: "/images/gulab_jamun.JPG",
     },
     
     {
@@ -31,28 +31,28 @@ export default function FeaturedSweets() {
       title: "Rasgulla",
       category: "Bengali Sweet",
       price: "₹500/kg",
-      thumbnail: "/images/rasgulla.jpg",
+      thumbnail: "/images/rasgulla.JPG",
     },
     {
       id: 4,
       title: "Motichoor Ladoo",
       category: "Gram Flour Based",
       price: "₹550/kg",
-      thumbnail: "/images/laddoo.jpg",
+      thumbnail: "/images/laddoo.JPG",
     },
     {
       id: 5,
       title: "Ghewar",
       category: "Fried Sweet",
       price: "₹400/kg",
-      thumbnail: "/images/ghewar.jpg",
+      thumbnail: "/images/ghewar.JPG",
     },
     {
       id: 6,
       title: "Modak",
       category: "Pooja Sweet",
       price: "₹400/kg",
-      thumbnail: "/images/modak.jpg",
+      thumbnail: "/images/modak.JPG",
     },
   ]
 

@@ -17,7 +17,7 @@ export default function BestSellers() {
       category: "Milk Based",
       rating: 4.8,
       price: "₹750/kg",
-      thumbnail: "/images/peda.jpg",
+      thumbnail: "/images/peda.JPG",
     },
     {
       id: 2,
@@ -25,7 +25,7 @@ export default function BestSellers() {
       category: "Flaky Sweet",
       rating: 4.6,
       price: "₹450/kg",
-      thumbnail: "/images/sonpapdi.jpg",
+      thumbnail: "/images/sonpapdi.JPG",
     },
     {
       id: 3,
@@ -33,7 +33,7 @@ export default function BestSellers() {
       category: "Indian Sweet",
       rating: 4.9,
       price: "₹650/kg",
-      thumbnail: "/images/rabri.jpg",
+      thumbnail: "/images/rabri.JPG",
     },
     {
       id: 4,
@@ -41,7 +41,7 @@ export default function BestSellers() {
       category: "Gram Flour Based",
       rating: 4.7,
       price: "₹550/kg",
-      thumbnail: "/images/panjeeri_laddo.jpg",
+      thumbnail: "/images/panjeeri_laddo.JPG",
     },
     {
       id: 5,
@@ -49,7 +49,7 @@ export default function BestSellers() {
       category: "South Indian",
       rating: 4.5,
       price: "₹600/kg",
-      thumbnail: "/images/nariyal_laddoo.jpg",
+      thumbnail: "/images/nariyal_laddoo.JPG",
     },
     {
       id: 6,
@@ -57,7 +57,7 @@ export default function BestSellers() {
       category: "Milk Based",
       rating: 4.4,
       price: "₹500/kg",
-      thumbnail: "/images/peda.jpg",
+      thumbnail: "/images/peda.JPG",
     },
     {
       id: 7,
@@ -65,7 +65,7 @@ export default function BestSellers() {
       category: "Milk Based",
       rating: 4.4,
       price: "₹500/kg",
-      thumbnail: "/images/chenna_cherry.jpg",
+      thumbnail: "/images/chenna_cherry.JPG",
     },
     {
       id: 8,
@@ -73,7 +73,7 @@ export default function BestSellers() {
       category: "Milk Based",
       rating: 4.4,
       price: "₹500/kg",
-      thumbnail: "/images/chamcham.jpg",
+      thumbnail: "/images/chamcham.JPG",
     },
     {
       id: 8.5,
@@ -81,7 +81,7 @@ export default function BestSellers() {
       category: "Milk Based",
       rating: 4.4,
       price: "₹500/kg",
-      thumbnail: "/images/tricolor_barfi.jpg",
+      thumbnail: "/images/tricolor_barfi.JPG",
     },
     {
       id: 9,
@@ -89,7 +89,7 @@ export default function BestSellers() {
       category: "Milk Based",
       rating: 4.4,
       price: "₹500/kg",
-      thumbnail: "/images/paan.jpg",
+      thumbnail: "/images/paan.JPG",
     },
     {
       id: 10,
@@ -97,14 +97,14 @@ export default function BestSellers() {
       category: "Milk Based",
       rating: 4.4,
       price: "₹500/kg",
-      thumbnail: "/images/nariyal_laddoo.jpg",
+      thumbnail: "/images/nariyal_laddoo.JPG",
     },{
       id: 11,
       title: "Khoya Special Barfi",
       category: "Milk Based",
       rating: 4.4,
       price: "₹500/kg",
-      thumbnail: "/images/khoya.jpg",
+      thumbnail: "/images/khoya.JPG",
     },
     {
       id: 12,
@@ -112,7 +112,7 @@ export default function BestSellers() {
       category: "Gram Based",
       rating: 4.4,
       price: "₹500/kg",
-      thumbnail: "/images/bhujia.jpg",
+      thumbnail: "/images/bhujia.JPG",
     },
     {
       id: 13,
@@ -120,7 +120,7 @@ export default function BestSellers() {
       category: "WHeat Based",
       rating: 4.4,
       price: "₹500/kg",
-      thumbnail: "/images/khasta.jpg",
+      thumbnail: "/images/khasta.JPG",
     },
     {
       id: 14,
@@ -128,7 +128,7 @@ export default function BestSellers() {
       category: "Wheat Based",
       rating: 4.4,
       price: "₹500/kg",
-      thumbnail: "/images/matri.jpg",
+      thumbnail: "/images/matri.JPG",
     },
   ]
 

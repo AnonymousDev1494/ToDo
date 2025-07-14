@@ -17,7 +17,7 @@ export default function SpecialOffers() {
       title: "Diwali Special Box",
       description: "A premium collection of 12 varieties of traditional sweets perfect for Diwali celebrations.",
       price: "₹1,200",
-      image: "/images/bhujia.jpg",
+      image: "/images/bhujia.JPG",
       badge: "Limited Edition",
     },
     {
@@ -25,7 +25,7 @@ export default function SpecialOffers() {
       title: "Assorted Gift Pack",
       description: "Our bestselling assortment featuring 8 varieties of handcrafted sweets in an elegant box.",
       price: "₹850",
-      image: "/images/peda.jpg",
+      image: "/images/peda.JPG",
       badge: "Popular",
     },
     {
@@ -33,7 +33,7 @@ export default function SpecialOffers() {
       title: "Wedding Collection",
       description: "Luxurious sweet boxes perfect for wedding gifts and special occasions.",
       price: "₹1,500",
-      image: "/images/chenna_cherry.jpg",
+      image: "/images/chenna_cherry.JPG",
       badge: "Premium",
     },
   ]

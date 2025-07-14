@@ -15,19 +15,19 @@ export default function Hero() {
       title: "Authentic Indian Sweets Made with Love",
       description:
         "Handcrafted with traditional recipes passed down through generations. Pure ingredients, authentic taste.",
-      image: "/images/image.png",
+      image: "/images/chamcham.JPG",
       color: "from-[#e94560]/80 to-[#ffa500]/80",
     },
     {
       title: "Special Festive Collections",
       description: "Celebrate festivals with our special collections of traditional and modern Indian sweets.",
-      image: "/images/bhujia.jpg",
+      image: "/images/bhujia.JPG",
       color: "from-[#ffa500]/80 to-accent/80",
     },
     {
       title: "Perfect Gifts for Every Occasion",
       description: "Beautifully packaged sweet boxes that make the perfect gift for your loved ones.",
-      image: "/images/ghewar.jpg",
+      image: "/images/ghewar.JPG",
       color: "from-accent/80 to-[#e94560]/80",
     },
   ]
