@@ -15,7 +15,7 @@ export default function Hero() {
       title: "Authentic Indian Sweets Made with Love",
       description:
         "Handcrafted with traditional recipes passed down through generations. Pure ingredients, authentic taste.",
-      image: "/images/kaju_katli.jpg",
+      image: "/images/chamcham.jpg",
       color: "from-[#e94560]/80 to-[#ffa500]/80",
     },
     {
@@ -53,7 +53,7 @@ export default function Hero() {
         >
           <div className="absolute inset-0 bg-black/40 z-10" />
           <div className={`absolute inset-0 bg-gradient-to-r ${slide.color} mix-blend-multiply z-20`} />
-          <Image height={800} width={1600} src={slide.image || "/placeholder.svg"} alt={slide.title} className="w-full h-full object-cover" />
+          <Image height={800} width={800} src={slide.image || "/placeholder.svg"} alt={slide.title} className="w-full h-full object-cover" />
         </motion.div>
       ))}
 

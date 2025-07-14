@@ -125,7 +125,7 @@ export default function AboutContent() {
               transition={{ duration: 0.5, delay: 0.2 }}
             >
               <div className="relative rounded-lg overflow-hidden shadow-xl">
-                <Image src="/images/shop.jpg?height=600&width=800" height={800} width={800} alt="Sweet shop heritage" className="w-full h-auto" />
+                <Image  src="/images/shop.jpg?height=600&width=800" height={800} width={800} alt="Sweet shop heritage" className="w-full h-auto" />
               </div>
             </motion.div>
 
@@ -183,7 +183,7 @@ export default function AboutContent() {
                 variants={fadeIn}
                 className="bg-white :bg-gray-800 rounded-lg shadow-md overflow-hidden"
               >
-                <Image height={800} width={800} src={member.image || "/placeholder.svg"} alt={member.name} className="w-full h-64 object-cover" />
+                <Image  height={800} width={800} src={member.image || "/placeholder.svg"} alt={member.name} className="w-full h-64 object-cover" />
                 <div className="p-6">
                   <h3 className="text-xl font-bold mb-1">{member.name}</h3>
                   <p className="text-[#e94560] font-medium mb-3">{member.role}</p>

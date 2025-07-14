@@ -13,11 +13,11 @@ export default function BestSellers() {
   const bestSellers = [
     {
       id: 1,
-      title: "Kaju Barfi",
-      category: "Cashew Based",
+      title: "Peda",
+      category: "Milk Based",
       rating: 4.8,
       price: "₹750/kg",
-      thumbnail: "/images/kaju_katli.jpg",
+      thumbnail: "/images/peda.jpg",
     },
     {
       id: 2,
@@ -178,6 +178,7 @@ export default function BestSellers() {
             >
               <div className="relative aspect-square overflow-hidden rounded-t-lg">
                 <Image
+                
                 height={400}
                 width={600}
                   src={sweet.thumbnail || "/placeholder.svg"}

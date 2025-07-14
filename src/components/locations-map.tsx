@@ -135,6 +135,7 @@ export default function LocationsMap() {
                   <div className="flex flex-col md:flex-row gap-6">
                     <div className="md:w-1/3">
                       <Image
+                      
                         src={locations[activeLocation].image || "/placeholder.svg"}
                         alt={locations[activeLocation].name}
                         className="w-full h-auto rounded-lg"

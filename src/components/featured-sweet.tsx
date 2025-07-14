@@ -13,10 +13,10 @@ export default function FeaturedSweets() {
   const sweets = [
     {
       id: 1,
-      title: "Kaju Katli",
-      category: "Cashew Based",
+      title: "Modak",
+      category: "Modak",
       price: "₹650/kg",
-      thumbnail: "/images/kaju_katli.jpg",
+      thumbnail: "/images/modak.jpg",
     },
     {
       id: 2,
@@ -112,6 +112,7 @@ export default function FeaturedSweets() {
                 <div className="sweet-[#ffffff] group">
                   <div className="relative aspect-square overflow-hidden rounded-lg">
                     <Image
+                    
                       height={400}
                       width={600}
                       src={sweet.thumbnail || "/placeholder.svg"}
