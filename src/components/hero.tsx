@@ -15,7 +15,7 @@ export default function Hero() {
       title: "Authentic Indian Sweets Made with Love",
       description:
         "Handcrafted with traditional recipes passed down through generations. Pure ingredients, authentic taste.",
-      image: "/images/chamcham.jpg",
+      image: "/images/image.png",
       color: "from-[#e94560]/80 to-[#ffa500]/80",
     },
     {
