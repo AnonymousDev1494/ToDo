@@ -25,6 +25,7 @@ export default function FeaturedSweets() {
       price: "₹450/kg",
       thumbnail: "/images/gulab_jamun.jpg",
     },
+    
     {
       id: 3,
       title: "Rasgulla",
